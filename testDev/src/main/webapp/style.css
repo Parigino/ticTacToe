@@ -1,0 +1,85 @@
+#container {
+  display: grid;
+  grid-template-columns: 20% [main] 60%  20% [end]; 
+  grid-auto-rows: 100px;
+}
+
+#configContainer{
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 10% 40% 10% 40%;
+  	grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . .";
+	height: inherit;
+}
+
+.row1{
+  grid-column-start: 1; 
+  grid-row-start: 1; 	
+}
+
+.gridCombo1 { 
+grid-column-start: 1;
+    grid-row-start: 2;
+}
+.gridCombo2 { 
+grid-column-start: 2;
+    grid-row-start: 2;
+}
+.gridCombo3 { 
+grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.gridplayerNum1 { 
+grid-column-start: 1;
+    grid-row-start: 4;
+}
+.gridplayerNum2 { 
+grid-column-start: 2;
+    grid-row-start: 4;
+}
+.gridplayerNum3 { 
+grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+
+
+td {
+	border:  2px solid #333;
+	height:  100px;
+	width:  100px;
+	text-align:  center;
+	vertical-align:  middle;
+	/*font-family:*/
+	font-size:  70px;
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	position: absolute;
+	left: 50%;
+	margin-left: -155px;
+	top: 50px;
+	grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.displayWin {
+  display: none;
+  width: 200px;
+  top: 120px;
+  background-color: rgba(205,133,63, 1);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+  z-index: 1;
+}

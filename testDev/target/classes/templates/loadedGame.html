@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Full stack Interview - Tic Tac Toe</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+	<script  src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+	<!-- jquery-us modal needs old jquery version? -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript" src="./functions.js"></script>
+	<script>
+		$( document ).ready(function() {
+			    console.log( "retrive ready!");
+			    loadGame();
+			});
+	</script>    
+</head>
+<body>
+<div id="container">
+
+    <p class="posA">TEST LOADED!</p><br>
+     <p id="placeholder" th:text="${step}" style="display:none"/>
+    <div class="displayWin">
+    	<div class="text"></div>
+    	<input type="button" value="Reset" onclick="startGame()" >
+    </div>     
+    
+</div>
+
+
+
+</body>
+</html>
