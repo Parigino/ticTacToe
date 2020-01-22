@@ -1,12 +1,17 @@
 # ticTacToe
 
 Technical exercise
+
 Objectives
+
 Create the game Tic-Tac-Toe:  https://en.wikipedia.org/wiki/Tic-tac-toe and make it available at a given domain.
 Allow users to continue the game on a different browser or device by sharing the URL with that browser/device.
+
 User Stories
 Story 1
+
 As a user I want to configure my game before starting to play, so that I can customize the game to what I like the most
+
 Acceptance Criterias
 On a configuration screen the user can:
 select the grid size between those options
