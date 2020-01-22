@@ -60,8 +60,14 @@ The user can leave the game at any point and reopening that URL will allow the u
 
 ### Tech notes
 Frontend and backend need to communicate via an API .
+
 For the backend you are free to choose the language/framework you prefer.
+
 The front-end should be on Web or Native app.
+
 The game to be shared via URL needs to be persisted in a relational database (maybe not the best choice for this exercise, but good to test your skills in structuring data).
+
 This game should be publicly available.
-Please share the repository once you finish the exercise.
+
+
+
