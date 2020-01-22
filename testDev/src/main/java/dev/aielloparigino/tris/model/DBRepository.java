@@ -19,10 +19,13 @@ public class DBRepository {
 	public Games insertNewGame(String numPlayer, String grid) {
 
 		Games newGame = new Games();
+		// FIXME: inutile salvare con 'x'
 		newGame.setGridConf(grid + "x" + grid);
 		newGame.setPlayerNum(Integer.valueOf(numPlayer));
 
-		return newGame = gameRepository.save(newGame);
+		newGame.setIdgames(Integer.valueOf("999"));
+		// return newGame = gameRepository.save(newGame);
+		return newGame;
 	}
 
 	public GameSteps insertStep(String gameID, String step, String playerTurn) {
@@ -33,12 +36,14 @@ public class DBRepository {
 		gameStep.setStep(step.toString());
 		gameStep.setPlayerTurn(Integer.valueOf(playerTurn));
 		// TODO: vericare salvataggio transazione/riga su db?
-		return gameStepsRepository.save(gameStep);
+
+		// return gameStepsRepository.save(gameStep);
+		return gameStep;
 	}
 
 	public String loadStep(String gameID) {
 
-		return gameStepsRepository.findLastStep(gameID);
-		// return gameStepsRepository.findById(Integer.valueOf(gameID)).get();
+		// return gameStepsRepository.findLastStep(gameID);
+		return "3x3,2,0,_,_,0,1,0,1,0,_,0";
 	}
 }
