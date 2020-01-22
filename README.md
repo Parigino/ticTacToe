@@ -15,21 +15,30 @@ As a user I want to configure my game before starting to play, so that I can cus
 Acceptance Criterias
 On a configuration screen the user can:
 select the grid size between those options
+
 3 by 3
 5 by 5
 10 by 10
+
 select the number of players
+
 Min 2 players
 Max 4 players
+
 Once the user has finished to configure his game, he can continue to the playing screen
+
 Once created the game cannot be edited/deleted
+
 The user can create as many new games as he wants by accessing the configuration screen
+
 Story 2
 As a user I want to play the game with friends so that I can have fun
+
 Acceptance Criterias
 Each player will be represented by the symbol he uses to play (ex. Circle, Cross, etc.)
 A playing grid is displayed on the playing screen accordingly to the game configuration
 The current player is shown next to the grid (show the symbol that represents the current player)
+
 Once the user selects an empty cell of the grid:
 Add the symbol of the current player in the selected cell
 If the user has won:
