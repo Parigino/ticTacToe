@@ -24,8 +24,7 @@ public class DBRepository {
 		newGame.setPlayerNum(Integer.valueOf(numPlayer));
 
 		newGame.setIdgames(Integer.valueOf("999"));
-		// return newGame = gameRepository.save(newGame);
-		return newGame;
+		return newGame = gameRepository.save(newGame);
 	}
 
 	public GameSteps insertStep(String gameID, String step, String playerTurn) {
@@ -37,13 +36,11 @@ public class DBRepository {
 		gameStep.setPlayerTurn(Integer.valueOf(playerTurn));
 		// TODO: vericare salvataggio transazione/riga su db?
 
-		// return gameStepsRepository.save(gameStep);
-		return gameStep;
+		return gameStepsRepository.save(gameStep);
 	}
 
 	public String loadStep(String gameID) {
 
-		// return gameStepsRepository.findLastStep(gameID);
-		return "3x3,2,0,_,_,0,1,0,1,0,_,0";
+		return gameStepsRepository.findLastStep(gameID);
 	}
 }
